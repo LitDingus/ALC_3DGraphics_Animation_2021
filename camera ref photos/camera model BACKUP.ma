@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
-//Name: camera model.ma
-//Last modified: Fri, Feb 05, 2021 12:48:34 PM
+//Name: camera model BACKUP.ma
+//Last modified: Fri, Feb 05, 2021 12:49:05 PM
 //Codeset: UTF-8
 requires maya "2019";
 requires "stereoCamera" "10.0";
@@ -28636,4 +28636,4 @@ connectAttr "groupId97.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId98.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId99.msg" ":initialShadingGroup.gn" -na;
 connectAttr "polySurfaceShape11.iog" ":initialParticleSE.dsm" -na;
-// End of camera model.ma
+// End of camera model BACKUP.ma
