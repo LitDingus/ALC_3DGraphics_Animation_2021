@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: this thing is broken.ma
-//Last modified: Wed, Mar 10, 2021 01:33:46 PM
+//Last modified: Wed, Mar 10, 2021 01:40:11 PM
 //Codeset: UTF-8
 requires maya "2019";
 requires "stereoCamera" "10.0";
@@ -17,7 +17,7 @@ fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "1D58DB52-D441-97E1-724D-F093D3C1623F";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -0.10616164289417496 2.9340751235840195 15.278893626265141 ;
+	setAttr ".t" -type "double3" -0.99247189897999744 3.3467194324590843 26.294694029863592 ;
 	setAttr ".r" -type "double3" -2.1383537619892641 355.39999999981603 4.9856761586729051e-17 ;
 	setAttr ".rp" -type "double3" 0 0 -4.4408920985006262e-16 ;
 	setAttr ".rpt" -type "double3" -3.3840544519253298e-16 -2.4406351780383453e-16 5.9617464717564528e-16 ;
@@ -25,7 +25,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "970EE0D3-8C44-A324-5830-0595E2064459";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 13.239595981940466;
+	setAttr ".coi" 24.298695390464172;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
