@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: Juice_Box_Hero.ma
-//Last modified: Fri, Mar 19, 2021 01:41:04 PM
+//Last modified: Tue, Mar 23, 2021 12:33:13 PM
 //Codeset: UTF-8
 requires maya "2019";
 currentUnit -l centimeter -a degree -t film;
@@ -13,15 +13,15 @@ fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "21B49A2E-7042-2685-E99A-99A01B155ACA";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 16.525598585619313 1.7198641662527667 -7.3537339393439396 ;
-	setAttr ".r" -type "double3" -2.7353643706473107 452.05093993144271 0 ;
+	setAttr ".t" -type "double3" 28.292449853927387 5.9272110561532569 -0.37720460782115661 ;
+	setAttr ".r" -type "double3" -4.5353643706720321 450.85093993138457 5.0888874903416268e-14 ;
 	setAttr ".rp" -type "double3" 0 -1.7763568394002505e-15 3.5527136788005009e-15 ;
 	setAttr ".rpt" -type "double3" -2.5102680894806795e-15 1.390065579943879e-15 -6.5887324230485869e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "D0231484-5C4A-B508-1C23-B1B4844BA687";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 14.181445736189394;
+	setAttr ".coi" 26.0272768602693;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -10280,7 +10280,7 @@ createNode parentConstraint -n "joint2_parentConstraint1" -p "joint2";
 	setAttr ".tg[0].tot" -type "double3" -9.1018182007613777e-32 4.4408920985006262e-16 
 		0 ;
 	setAttr ".tg[0].tor" -type "double3" 0 0 89.999999999999986 ;
-	setAttr ".lr" -type "double3" -4.9071494290331226e-15 15.58221944953026 -6.7142017035746122e-16 ;
+	setAttr ".lr" -type "double3" -1.5941437205882865e-15 4.6075094617027199 -6.4132062757279076e-17 ;
 	setAttr ".rst" -type "double3" 1.554882398772083 3.4525324794023201e-16 0 ;
 	setAttr -k on ".w0";
 createNode parentConstraint -n "joint12_parentConstraint1" -p "joint12";
@@ -10300,7 +10300,7 @@ createNode parentConstraint -n "joint12_parentConstraint1" -p "joint12";
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" -4.9303771362017389e-32 0 0 ;
 	setAttr ".tg[0].tor" -type "double3" 0 0 89.999999999999986 ;
-	setAttr ".lr" -type "double3" -4.0582607495428564e-15 13.338099818993703 -4.7451376412874179e-16 ;
+	setAttr ".lr" -type "double3" 7.9550962646607053e-16 -2.020411868299099 -1.4027417662691108e-17 ;
 	setAttr ".rst" -type "double3" 1.2884815318385674 2.8610037269029355e-16 0 ;
 	setAttr -k on ".w0";
 createNode orientConstraint -n "group1_orientConstraint1" -p "group1";
@@ -10318,7 +10318,7 @@ createNode orientConstraint -n "group1_orientConstraint1" -p "group1";
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -359.99999999999994 4.4979835663949411e-15 -89.999999999999986 ;
+	setAttr ".lr" -type "double3" -360 0 -89.999999999999986 ;
 	setAttr ".o" -type "double3" 0 0 89.999999999999986 ;
 	setAttr -l on ".ox";
 	setAttr -l on ".oy";
@@ -10341,7 +10341,7 @@ createNode parentConstraint -n "group3_parentConstraint1" -p "RootJoint_Buffer";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" -1.2583182093163943 -0.010370754472387833 -0.62905847519128499 ;
-	setAttr ".lr" -type "double3" -62.442737767761322 0 0 ;
+	setAttr ".lr" -type "double3" 89.703677723040471 0 0 ;
 	setAttr -k on ".w0";
 createNode transform -n "MidCtrl_buffer" -p "ScaleGroup";
 	rename -uid "CFCE9E22-6040-F7E0-C57B-50B759839208";
@@ -10402,7 +10402,7 @@ createNode parentConstraint -n "MidCtrl_buffer_parentConstraint1" -p "MidCtrl_bu
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" -2.2204460492503131e-16 0 0 ;
 	setAttr ".tg[0].tor" -type "double3" 0 0 -89.999999999999986 ;
-	setAttr ".lr" -type "double3" -422.44273776776134 2.0131390840495774e-14 -2.8146769820763882e-14 ;
+	setAttr ".lr" -type "double3" -270.29632227695947 -1.3307859260262553e-14 -2.4398782635942611e-12 ;
 	setAttr ".rst" -type "double3" -4.9304053076384177e-32 -2.2204460492503131e-16 0 ;
 	setAttr -k on ".w0";
 createNode transform -n "BaseCtrls_group" -p "ScaleGroup";
@@ -10481,7 +10481,7 @@ createNode parentConstraint -n "BaseCtrls_group_parentConstraint1" -p "BaseCtrls
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tor" -type "double3" 0 0 -89.999999999999986 ;
-	setAttr ".lr" -type "double3" -62.442737767761336 0 0 ;
+	setAttr ".lr" -type "double3" 89.703677723040471 0 0 ;
 	setAttr -k on ".w0";
 createNode transform -n "TopCtrl_buffer" -p "ScaleGroup";
 	rename -uid "7BEC6BE8-1749-FE2C-4CB5-0D85E3373460";
@@ -10638,7 +10638,7 @@ createNode parentConstraint -n "group6_parentConstraint1" -p "TopCtrl_buffer";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tor" -type "double3" 0 0 -89.999999999999986 ;
-	setAttr ".lr" -type "double3" -75.780837586755027 2.08129195721415e-14 -1.4685514240364783e-14 ;
+	setAttr ".lr" -type "double3" 91.724089591339563 -2.0451986620331927e-14 -2.4619672935328184e-12 ;
 	setAttr -k on ".w0";
 createNode transform -n "StrawPV_buffer" -p "ScaleGroup";
 	rename -uid "A57EC872-0143-2FEE-209E-8E967B910485";
@@ -10709,7 +10709,7 @@ createNode parentConstraint -n "group5_parentConstraint1" -p "StrawPV_buffer";
 	setAttr -s 3 ".tg";
 	setAttr ".tg[2].tot" -type "double3" -5.4234187233944562e-31 -2.8433639306106508 
 		0 ;
-	setAttr ".lr" -type "double3" -91.363057036285255 0 0 ;
+	setAttr ".lr" -type "double3" 87.116580129636816 0 0 ;
 	setAttr -l on ".int";
 	setAttr -k on ".w0";
 	setAttr -k on ".w2";
@@ -10765,7 +10765,7 @@ createNode orientConstraint -n "StrawTip_CTRL_orientConstraint1" -p "StrawTip_IK
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".lr" -type "double3" -39.99297179997312 85.178798109369936 102.72422411563153 ;
+	setAttr ".lr" -type "double3" -12.377383544711059 104.13166908730598 -16.757149125491228 ;
 	setAttr ".o" -type "double3" 0.0032792417913701829 -0.00026314553532178858 -89.999898572726082 ;
 	setAttr ".rsrr" -type "double3" -7.9191674920354024e-10 1.204605272163623e-07 -3.0409853691425895e-07 ;
 	setAttr -k on ".w0";
@@ -10790,7 +10790,7 @@ createNode parentConstraint -n "group4_parentConstraint1" -p "StrawCtrl_buffer";
 	setAttr ".tg[0].tot" -type "double3" 0.80234496875332362 6.352850535069364 0.30065692167750713 ;
 	setAttr ".tg[1].tot" -type "double3" 0.80234496875332362 6.352850535069364 0.30065692167750713 ;
 	setAttr ".tg[2].tot" -type "double3" 0.80234496875332362 3.5094866044587132 0.30065692167750713 ;
-	setAttr ".lr" -type "double3" -91.363057036285255 0 0 ;
+	setAttr ".lr" -type "double3" 87.116580129636816 0 0 ;
 	setAttr -l on ".int";
 	setAttr -k on ".w0";
 	setAttr -k on ".w2";
@@ -10900,7 +10900,7 @@ createNode parentConstraint -n "strawBaseCtrl_buffer_parentConstraint1" -p "stra
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" 0.80234496874427963 1.2297037867203224 0.30065692167927793 ;
-	setAttr ".lr" -type "double3" -91.363057036285255 0 0 ;
+	setAttr ".lr" -type "double3" 87.116580129636816 0 0 ;
 	setAttr ".rst" -type "double3" 0 -8.8817841970012523e-16 0 ;
 	setAttr -k on ".w0";
 createNode scaleConstraint -n "strawBaseCtrl_buffer_scaleConstraint1" -p "strawBaseCtrl_buffer";
@@ -10935,18 +10935,18 @@ createNode mesh -n "pCubeShape1" -p "pCube1";
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 64 ".pt";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "D554CF42-EF49-237B-7F96-7B9FC7C94A00";
+	rename -uid "FFE64D18-EC41-D36C-EC4A-12807EE7570F";
 	setAttr -s 6 ".lnk";
 	setAttr -s 6 ".slnk";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "02E221F6-4B4D-B503-02A2-45805A407283";
+	rename -uid "2F598C6B-BF4A-DDA0-31F7-4C9038A40A2C";
 	setAttr ".cdl" 1;
 	setAttr -s 4 ".dli[1:3]"  1 2 3;
 	setAttr -s 4 ".dli";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "45BC6930-1D4D-A0CF-42E7-0E9C0550BCF2";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "326E1864-3C45-8778-001F-1FBEE08A8EE6";
+	rename -uid "D8EE8763-CB43-645F-F5A5-F498C99A84D4";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "1DA44D3D-194E-68EB-0FE9-019D0903C517";
 	setAttr ".g" yes;
@@ -10996,7 +10996,7 @@ createNode script -n "uiConfigurationScriptNode";
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "C1CA15DC-AA46-5BD4-D7A8-E189671E9F10";
-	setAttr ".b" -type "string" "playbackOptions -min 224 -max 303 -ast 1 -aet 400 ";
+	setAttr ".b" -type "string" "playbackOptions -min 1 -max 303 -ast 1 -aet 400 ";
 	setAttr ".st" 6;
 createNode phong -n "Straw_mat";
 	rename -uid "0D225356-1B4B-8F4F-498E-6795FD9DEBF3";
@@ -13208,10 +13208,10 @@ createNode animCurveUU -n "StrawPV_CTRL_visibility";
 createNode nodeGraphEditorBookmarkInfo -n "nodeGraphEditorBookmarkInfo1";
 	rename -uid "03ED0903-424A-58F8-E2AC-9693A27A3D9E";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "DB5C76B6-F846-8758-8C01-6B820F1276BC";
+	rename -uid "F8E05106-4645-CAC4-40C2-3797E28644ED";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 1 0 ;
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "5C83A760-8647-2D26-476B-B9A6940C5AF3";
+	rename -uid "C0DEEC55-2149-5DFA-FC28-CDB113DFC9B6";
 createNode polyCube -n "polyCube1";
 	rename -uid "827DD621-2B4E-3CD6-E1D9-07A5272AD6A1";
 	setAttr ".w" 10.89673859164629;
@@ -13374,7 +13374,7 @@ createNode animCurveTA -n "Box_Man_Man_Top_CTRL_rotateX";
 	setAttr ".wgt" no;
 	setAttr -s 42 ".ktv[0:41]"  1 0 38 0 40 0 42 0 44 0 46 0 48 0 50 0 52 0
 		 54 0 56 0 58 0 60 0 62 0 64 0 65 0 66 0 70 0 124 0 131 0 134 0 144 9.4995760170798054
-		 145 2.7180766681028246 147 -11.745472609208869 154 9.4829407959332368 163 -1.5046861480229077
+		 145 2.7180766681028246 147 -11.745472609208869 154 9.4829407959332368 163 -1.5046861480229079
 		 204 0 211 20.601649550555237 217 0 220 26.179641331819845 223 45.125175509456987
 		 228 24.897974337572457 230 -4.6075094617027199 232 -35.575354043666707 234 -41.303339476575772
 		 237 -47.769478449251999 239 1.5580453117199689 249 -0.38068074914977551 269 -24.575522002223735
@@ -13483,7 +13483,7 @@ createNode animCurveTA -n "Box_Man_Man_StrawBase_FK_CTRL_rotateZ";
 	rename -uid "256E4C7E-EA41-3E98-DB4F-34BAAC9F6CCD";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 35 ".ktv[0:34]"  38 0.22265026216571793 40 0.22265026216571793
+	setAttr -s 36 ".ktv[0:35]"  38 0.22265026216571793 40 0.22265026216571793
 		 42 0.22265026216571793 44 0.22265026216571793 46 0.22265026216571793 48 0.22265026216571793
 		 50 0.22265026216571793 52 0.22265026216571793 54 0.22265026216571793 56 0.22265026216571793
 		 58 0.22265026216571793 60 0.22265026216571793 62 0.22265026216571793 64 0.22265026216571793
@@ -13492,12 +13492,12 @@ createNode animCurveTA -n "Box_Man_Man_StrawBase_FK_CTRL_rotateZ";
 		 198 -12.083738056705403 204 -12.083738056705403 211 -16.033251525243369 217 -16.676391233256187
 		 220 -4.5519323345934222 226 19.293543781448506 228 -4.5519323345934222 230 -4.5519323345934222
 		 232 -34.819507836061902 237 -9.1507441684875168 249 -12.387589263138155 269 -22.696786550652455
-		 282 -34.66746246094219;
+		 275 -18.769187467303418 282 -34.66746246094219;
 createNode animCurveTA -n "Box_Man_Man_StrawBase_FK_CTRL_rotateY";
 	rename -uid "56D54ACE-8949-D45A-BF2B-629708427480";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 40 ".ktv[0:39]"  38 -0.050360599778717423 40 -0.050360599778717423
+	setAttr -s 41 ".ktv[0:40]"  38 -0.050360599778717423 40 -0.050360599778717423
 		 42 -0.050360599778717423 44 -0.050360599778717423 46 -0.050360599778717423 48 -0.050360599778717423
 		 50 -0.050360599778717423 52 -0.050360599778717423 54 -0.050360599778717423 56 -0.050360599778717423
 		 58 -0.050360599778717423 60 -0.050360599778717423 62 -0.050360599778717423 64 -0.050360599778717423
@@ -13506,13 +13506,13 @@ createNode animCurveTA -n "Box_Man_Man_StrawBase_FK_CTRL_rotateY";
 		 147 310.61277674090024 154 216.42252645927559 162 283.16841381438479 174 247.43539564488907
 		 187 275.63925615356578 198 275.02162879517289 204 275.02162879517289 211 152.52428242305382
 		 217 161.14487167560804 220 150.70937317274681 226 120.07368228967367 228 150.70937317274681
-		 230 150.70937317274681 232 147.15008455636931 237 340.46250782126856 249 341.38062966770065
-		 269 341.10199200995902 282 334.95945824199197;
+		 230 150.70937317274681 232 147.15008455636931 237 340.46250782126862 249 341.38062966770065
+		 269 341.10199200995902 275 193.4390205631901 282 334.95945824199197;
 createNode animCurveTA -n "Box_Man_Man_StrawBase_FK_CTRL_rotateX";
 	rename -uid "9722DC77-C84C-4EE3-784C-7FA9E33EEF6A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 35 ".ktv[0:34]"  38 13.072625605072366 40 13.072625605072366
+	setAttr -s 36 ".ktv[0:35]"  38 13.072625605072366 40 13.072625605072366
 		 42 13.072625605072366 44 13.072625605072366 46 13.072625605072366 48 13.072625605072366
 		 50 13.072625605072366 52 13.072625605072366 54 13.072625605072366 56 13.072625605072366
 		 58 13.072625605072366 60 13.072625605072366 62 13.072625605072366 64 13.072625605072366
@@ -13521,12 +13521,12 @@ createNode animCurveTA -n "Box_Man_Man_StrawBase_FK_CTRL_rotateX";
 		 198 7.0309930291275933 204 7.0309930291275933 211 -0.61573555513839595 217 -1.8609306476768737
 		 220 20.618098563472635 226 5.8138642241685963 228 20.618098563472635 230 20.618098563472635
 		 232 -32.418589264425798 237 23.499688997893514 249 13.908872677906794 269 -16.887166858580969
-		 282 -42.927337857151926;
+		 275 10.141064324944868 282 -42.927337857151926;
 createNode animCurveTA -n "Box_Man_Man_StrawTip_FK_CTRL_rotateZ";
 	rename -uid "F4039FDC-C742-6289-B526-2A980CC53CC4";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 33 ".ktv[0:32]"  38 -1.3918320348211465e-15 40 -1.3918320348211465e-15
+	setAttr -s 37 ".ktv[0:36]"  38 -1.3918320348211465e-15 40 -1.3918320348211465e-15
 		 42 -1.3918320348211465e-15 44 -1.3918320348211465e-15 46 -1.3918320348211465e-15
 		 48 -1.3918320348211465e-15 50 -1.3918320348211465e-15 52 -1.3918320348211465e-15
 		 54 -1.3918320348211465e-15 56 -1.3918320348211465e-15 58 -1.3918320348211465e-15
@@ -13534,35 +13534,37 @@ createNode animCurveTA -n "Box_Man_Man_StrawTip_FK_CTRL_rotateZ";
 		 65 -1.3918320348211465e-15 66 -1.3918320348211465e-15 70 -1.3918320348211465e-15
 		 124 -1.3918320348211465e-15 131 -1.3918320348211465e-15 134 24.048245044316257 144 13.546431187876696
 		 145 -36.732370291197775 204 -36.732370291197775 211 -36.161651388276773 217 -146.68258681883168
-		 223 -56.534600385661257 228 -56.534600385661257 230 -56.534600385661257 237 -30.381548645656913
-		 239 30.738114541090745 249 50.536749890723108 269 59.144106865720651 282 29.906373931900109;
+		 223 -3.6432644966930554 226 95.334701124053367 228 -56.534600385661257 230 -96.717860540533437
+		 237 -30.381548645656913 239 30.738114541090745 249 50.536749890723108 269 59.144106865720651
+		 272 85.069314751849518 273 81.505634783369487 275 -31.240296996750576 282 18.57874923740588;
 createNode animCurveTA -n "Box_Man_Man_StrawTip_FK_CTRL_rotateY";
 	rename -uid "521643B5-7B4D-30D9-06D5-74A93A928574";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 35 ".ktv[0:34]"  38 14.672739580784063 40 14.672739580784063
+	setAttr -s 37 ".ktv[0:36]"  38 14.672739580784063 40 14.672739580784063
 		 42 14.672739580784063 44 14.672739580784063 46 14.672739580784063 48 14.672739580784063
 		 50 14.672739580784063 52 14.672739580784063 54 14.672739580784063 56 14.672739580784063
 		 58 14.672739580784063 60 14.672739580784063 62 14.672739580784063 64 14.672739580784063
 		 65 14.672739580784063 66 14.672739580784063 70 14.672739580784063 124 14.672739580784063
 		 131 14.672739580784063 134 -10.765975355510985 144 -0.19997777487408266 145 50.066830677412568
-		 204 50.066830677412568 211 49.49716215280062 217 -85.154626007002406 223 -234.09535283071989
-		 228 -234.09535283071989 230 -234.09535283071989 237 -74.171121623691789 239 -27.794211140368454
-		 249 -30.264549081264111 269 -37.32265748382315 273 -92.524019106004886 275 -277.93280903465273
-		 282 -346.39605011556023;
+		 204 50.066830677412568 211 49.49716215280062 217 -85.154626007002406 223 0 226 -92.978169492800589
+		 228 -234.09535283071989 230 -18.184617304580776 237 -74.171121623691789 239 -27.794211140368454
+		 249 -30.264549081264111 269 -37.32265748382315 272 -12.496529780832773 273 -15.135304009319276
+		 275 -98.641460914681375 282 -54.781489313745645;
 createNode animCurveTA -n "Box_Man_Man_StrawTip_FK_CTRL_rotateX";
 	rename -uid "56EDFF9E-E148-D27D-DFAC-658DA9A6A3AC";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 33 ".ktv[0:32]"  38 55.159822354787316 40 55.159822354787316
+	setAttr -s 37 ".ktv[0:36]"  38 55.159822354787316 40 55.159822354787316
 		 42 55.159822354787316 44 55.159822354787316 46 55.159822354787316 48 55.159822354787316
 		 50 55.159822354787316 52 55.159822354787316 54 55.159822354787316 56 55.159822354787316
 		 58 55.159822354787316 60 55.159822354787316 62 55.159822354787316 64 55.159822354787316
 		 65 55.159822354787316 66 55.159822354787316 70 55.159822354787316 124 55.159822354787316
 		 131 55.159822354787316 134 96.100954142684557 144 124.47578840630339 145 86.537883743751294
-		 204 86.537883743751294 211 86.508616807147646 217 82.294101548886104 223 31.512655921077123
-		 228 31.512655921077123 230 31.512655921077123 237 0.39095841942115456 239 -72.04128309267918
-		 249 -67.812354068634491 269 -55.729699714221027 282 32.29345700015692;
+		 204 86.537883743751294 211 86.508616807147646 217 82.294101548886104 223 0 226 -25.7317624858782
+		 228 31.512655921077123 230 51.243245410748024 237 0.39095841942115456 239 -72.04128309267918
+		 249 -67.812354068634491 269 -55.729699714221027 272 18.946364612494879 273 45.955516255460978
+		 275 57.240238511403831 282 -28.434900927197923;
 createNode animCurveTL -n "Box_Man_Man_Base_CTRL_translateX";
 	rename -uid "BCDD6D69-AC49-3D8A-A8C9-19B65D758D2F";
 	setAttr ".tan" 18;
@@ -13604,7 +13606,7 @@ createNode animCurveTA -n "Box_Man_Man_Base_CTRL_rotateX";
 		 198 -0.66820567286872035 204 -0.66820567286872035 211 -25.697964001464072 217 -82.426533668363419
 		 220 -161.4434237392731 223 -234.61842178935046 226 -236.86005183217685 228 -245.48033039497352
 		 230 -270.29632227695953 232 -289.55668199372997 234 -318.99119035451645 236 -365.62253067094429
-		 237 -409.24300032399697 239 -449.66926558140835 249 -449.66926558140835 269 -402.29818630581542
+		 237 -409.24300032399697 239 -449.66926558140841 249 -449.66926558140841 269 -402.29818630581542
 		 273 -451.45449926700462;
 createNode animCurveTA -n "Box_Man_Man_Base_CTRL_rotateY";
 	rename -uid "BB596041-2E44-03C3-D2F1-2A8EC27DEA0E";
@@ -14701,8 +14703,8 @@ select -ne :time1;
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -k on ".o" 230;
-	setAttr ".unw" 230;
+	setAttr -k on ".o" 169;
+	setAttr ".unw" 169;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".vac" 2;
 	setAttr ".etmr" no;
@@ -14991,18 +14993,18 @@ connectAttr "groupId22.id" "|Group_All|Geo_group|Blendshape_meshes|Inflated|poly
 		;
 connectAttr "Box_mat2SG.mwc" "|Group_All|Geo_group|Blendshape_meshes|Inflated|polySurfaceShape1.iog.og[3].gco"
 		;
-connectAttr "Box_Man_Man.lv[2]" "Base_CTRL.ty";
-connectAttr "Box_Man_Man.lv[1]" "Base_CTRL.tz";
-connectAttr "Box_Man_Man.lv[3]" "Base_CTRL.tx";
-connectAttr "Box_Man_Man.av[3]" "Base_CTRL.rx";
-connectAttr "Box_Man_Man.av[1]" "Base_CTRL.rz";
-connectAttr "Box_Man_Man.av[2]" "Base_CTRL.ry";
 connectAttr "Base_CTRL.SCALE_ALL" "Base_CTRL.sx" -l on;
 connectAttr "Base_CTRL.SCALE_ALL" "Base_CTRL.sy" -l on;
 connectAttr "Base_CTRL.SCALE_ALL" "Base_CTRL.sz" -l on;
 connectAttr "Box_Man_Man.uv[3]" "Base_CTRL.FRONT_BACK";
 connectAttr "Box_Man_Man.uv[2]" "Base_CTRL.LEFT_RIGHT";
 connectAttr "Box_Man_Man.uv[1]" "Base_CTRL.SCALE_ALL";
+connectAttr "Box_Man_Man.lv[2]" "Base_CTRL.ty";
+connectAttr "Box_Man_Man.lv[1]" "Base_CTRL.tz";
+connectAttr "Box_Man_Man.lv[3]" "Base_CTRL.tx";
+connectAttr "Box_Man_Man.av[3]" "Base_CTRL.rx";
+connectAttr "Box_Man_Man.av[1]" "Base_CTRL.rz";
+connectAttr "Box_Man_Man.av[2]" "Base_CTRL.ry";
 connectAttr "Ctrls.di" "Base_CTRL.do";
 connectAttr "locator1_rotateX.o" "locator1.rx" -l on;
 connectAttr "locator1_rotateZ.o" "locator1.rz" -l on;
@@ -15176,14 +15178,14 @@ connectAttr "MidCtrl_buffer_parentConstraint1.crz" "MidCtrl_buffer.rz" -l on;
 connectAttr "midCtrl_scaleGroup_scaleX.o" "midCtrl_scaleGroup.sx" -l on;
 connectAttr "midCtrl_scaleGroup_scaleY.o" "midCtrl_scaleGroup.sy" -l on;
 connectAttr "midCtrl_scaleGroup_scaleZ.o" "midCtrl_scaleGroup.sz" -l on;
-connectAttr "Box_Man_Man.av[6]" "Mid_CTRL.rx";
-connectAttr "Box_Man_Man.av[4]" "Mid_CTRL.rz";
-connectAttr "Box_Man_Man.av[5]" "Mid_CTRL.ry";
 connectAttr "Box_Man_Man.uv[5]" "Mid_CTRL.IN_OUT";
 connectAttr "Box_Man_Man.uv[4]" "Mid_CTRL.SQUASH_STRETCH";
 connectAttr "Box_Man_Man.lv[4]" "Mid_CTRL.tz";
 connectAttr "Box_Man_Man.lv[5]" "Mid_CTRL.ty";
 connectAttr "Box_Man_Man.lv[6]" "Mid_CTRL.tx";
+connectAttr "Box_Man_Man.av[6]" "Mid_CTRL.rx";
+connectAttr "Box_Man_Man.av[4]" "Mid_CTRL.rz";
+connectAttr "Box_Man_Man.av[5]" "Mid_CTRL.ry";
 connectAttr "Ctrls.di" "Mid_CTRL.do";
 connectAttr "MidCtrl_buffer.ro" "MidCtrl_buffer_parentConstraint1.cro";
 connectAttr "MidCtrl_buffer.pim" "MidCtrl_buffer_parentConstraint1.cpim";
@@ -15227,11 +15229,11 @@ connectAttr "group6_parentConstraint1.ctz" "TopCtrl_buffer.tz" -l on;
 connectAttr "group6_parentConstraint1.crx" "TopCtrl_buffer.rx" -l on;
 connectAttr "group6_parentConstraint1.cry" "TopCtrl_buffer.ry" -l on;
 connectAttr "group6_parentConstraint1.crz" "TopCtrl_buffer.rz" -l on;
+connectAttr "Box_Man_Man.uv[7]" "Top_CTRL.STRAW_LENGTH";
+connectAttr "Box_Man_Man.uv[6]" "Top_CTRL.STRAW_IK_FK";
 connectAttr "Box_Man_Man.lv[7]" "Top_CTRL.tz";
 connectAttr "Box_Man_Man.lv[8]" "Top_CTRL.ty";
 connectAttr "Box_Man_Man.lv[9]" "Top_CTRL.tx";
-connectAttr "Box_Man_Man.uv[7]" "Top_CTRL.STRAW_LENGTH";
-connectAttr "Box_Man_Man.uv[6]" "Top_CTRL.STRAW_IK_FK";
 connectAttr "Box_Man_Man.av[7]" "Top_CTRL.rz";
 connectAttr "Box_Man_Man.av[8]" "Top_CTRL.ry";
 connectAttr "Box_Man_Man.av[9]" "Top_CTRL.rx";
@@ -15326,9 +15328,9 @@ connectAttr "StrawTip_CTRL_orientConstraint1.w0" "StrawTip_CTRL_orientConstraint
 		;
 connectAttr "group4_parentConstraint1_locatorWorldOrientW0.o" "group4_parentConstraint1.w0"
 		 -l on;
-connectAttr "group4_parentConstraint1_Top_CTRLW2.o" "group4_parentConstraint1.w2"
-		 -l on;
 connectAttr "group4_parentConstraint1_Base_CTRLW1.o" "group4_parentConstraint1.w1"
+		 -l on;
+connectAttr "group4_parentConstraint1_Top_CTRLW2.o" "group4_parentConstraint1.w2"
 		 -l on;
 connectAttr "StrawCtrl_buffer.ro" "group4_parentConstraint1.cro";
 connectAttr "StrawCtrl_buffer.pim" "group4_parentConstraint1.cpim";
@@ -15836,13 +15838,6 @@ connectAttr "blinn1.oc" "blinn1SG.ss";
 connectAttr "pCubeShape1.iog" "blinn1SG.dsm" -na;
 connectAttr "blinn1SG.msg" "materialInfo4.sg";
 connectAttr "blinn1.msg" "materialInfo4.m";
-connectAttr "Box_Man_Man_Base_CTRL_SCALE_ALL.o" "Box_Man_Man.uv[1]";
-connectAttr "Box_Man_Man_Base_CTRL_LEFT_RIGHT.o" "Box_Man_Man.uv[2]";
-connectAttr "Box_Man_Man_Base_CTRL_FRONT_BACK.o" "Box_Man_Man.uv[3]";
-connectAttr "Box_Man_Man_Mid_CTRL_SQUASH_STRETCH.o" "Box_Man_Man.uv[4]";
-connectAttr "Box_Man_Man_Mid_CTRL_IN_OUT.o" "Box_Man_Man.uv[5]";
-connectAttr "Box_Man_Man_Top_CTRL_STRAW_IK_FK.o" "Box_Man_Man.uv[6]";
-connectAttr "Box_Man_Man_Top_CTRL_STRAW_LENGTH.o" "Box_Man_Man.uv[7]";
 connectAttr "Box_Man_Man_Base_CTRL_translateZ.o" "Box_Man_Man.lv[1]";
 connectAttr "Box_Man_Man_Base_CTRL_translateY.o" "Box_Man_Man.lv[2]";
 connectAttr "Box_Man_Man_Base_CTRL_translateX.o" "Box_Man_Man.lv[3]";
@@ -15867,6 +15862,13 @@ connectAttr "Box_Man_Man_StrawBase_FK_CTRL_rotateX.o" "Box_Man_Man.av[12]";
 connectAttr "Box_Man_Man_StrawTip_FK_CTRL_rotateZ.o" "Box_Man_Man.av[13]";
 connectAttr "Box_Man_Man_StrawTip_FK_CTRL_rotateY.o" "Box_Man_Man.av[14]";
 connectAttr "Box_Man_Man_StrawTip_FK_CTRL_rotateX.o" "Box_Man_Man.av[15]";
+connectAttr "Box_Man_Man_Base_CTRL_SCALE_ALL.o" "Box_Man_Man.uv[1]";
+connectAttr "Box_Man_Man_Base_CTRL_LEFT_RIGHT.o" "Box_Man_Man.uv[2]";
+connectAttr "Box_Man_Man_Base_CTRL_FRONT_BACK.o" "Box_Man_Man.uv[3]";
+connectAttr "Box_Man_Man_Mid_CTRL_SQUASH_STRETCH.o" "Box_Man_Man.uv[4]";
+connectAttr "Box_Man_Man_Mid_CTRL_IN_OUT.o" "Box_Man_Man.uv[5]";
+connectAttr "Box_Man_Man_Top_CTRL_STRAW_IK_FK.o" "Box_Man_Man.uv[6]";
+connectAttr "Box_Man_Man_Top_CTRL_STRAW_LENGTH.o" "Box_Man_Man.uv[7]";
 connectAttr "Base_CTRL.SCALE_ALL" "Box_Man_Man.dnsm[0]";
 connectAttr "Base_CTRL.LEFT_RIGHT" "Box_Man_Man.dnsm[1]";
 connectAttr "Base_CTRL.FRONT_BACK" "Box_Man_Man.dnsm[2]";
